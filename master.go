@@ -27,7 +27,7 @@ func doParse(rw http.ResponseWriter, r *http.Request) {
 
 	switch r.Method {
 	case "GET":
-		http.ServeFile(rw, r, "form.html")
+		http.ServeFile(rw, r, "master.html")
 
 	case "POST":
 		if err := r.ParseForm(); err != nil {
